@@ -7,14 +7,14 @@
     justify-content: left;
     align-items: left;
     background-color: white;
-    margin-left: 350px;
+    margin-right: 350px;
 }
 .progress{
     border: none;
     border-radius: 10px;
     width: 100%;
     height: 10px;
-    background-color: darkred;
+    background-color: lime;
     animation: aa 2s linear normal;
 }
 @keyframes aa{
@@ -32,13 +32,18 @@ body{
     align-content: center;
     color:white;
     text-shadow:
-    0 0 5px red,
-    0 0 10px red,
-    0 0 20px red,
-    0 0 40px red,
-    0 0 80px red,
-    0 0 100px red;
+    0 0 5px lime,
+    0 0 10px lime,
+    0 0 20px lime,
+    0 0 40px lime,
+    0 0 80px lime,
+    0 0 100px lime;
 }
-h1{
-    margin-top: 300px;
+@keyframes redAlert {
+  0%, 100% { color: white; }
+  50% { color: #ff0000; }
+}
+h1 {
+  animation: redAlert 1s infinite;   
+  margin-top: 300px;
 }
